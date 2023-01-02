@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ShowAllOppositeSexProfile"
+    android:background="#fff">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="880">
+            <include
+                layout="@layout/toolbar"
+                android:id="@+id/toolbar" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="869"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/show_all_opposite_sex_profile_recylerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarFadeDuration="0"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="11">
+
+                <Button
+                    android:id="@+id/show_requested_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#F3F3F3"
+                    android:text="♡"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="30dp"/>
+
+                <Button
+                    android:id="@+id/show_add_profile_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#F3F3F3"
+                    android:text="+"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="30dp"/>
+
+                <Button
+                    android:id="@+id/show_matched_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#F3F3F3"
+                    android:text="✉"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="30dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/navigationView"
+            android:layout_gravity="left"
+            app:headerLayout="@layout/header_layout"
+            app:menu="@menu/drawer_menu">
+
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>

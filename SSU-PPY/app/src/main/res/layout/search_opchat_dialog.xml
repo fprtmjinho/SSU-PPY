@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingLeft="30dp">
+
+    <RadioGroup
+        android:id="@+id/search_room_set"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="카테고리 선택"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="게임"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="스포츠"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/self_development"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="자기계발"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/economy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="경제"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여행"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/study"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공부"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/development"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개발"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+</LinearLayout>

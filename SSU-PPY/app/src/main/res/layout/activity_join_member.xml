@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".JoinMember"
+    android:weightSum="440"
+    android:background="#fff">
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="24"
+        android:weightSum="202"
+        android:background="#0fff"
+        android:layout_marginTop="70dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48"
+            android:gravity="center_vertical"
+            android:text="이메일"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/join_email"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="154"
+            android:background="#D9D9D9"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textColor="#000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="24"
+        android:weightSum="202"
+        android:background="#0fff"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48"
+            android:gravity="center_vertical"
+            android:text="P/W"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/join_password"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="154"
+            android:background="#D9D9D9"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="24"
+        android:weightSum="202"
+        android:background="#0fff"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48"
+            android:gravity="center_vertical"
+            android:text="이름"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/join_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="154"
+            android:background="#D9D9D9"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textColor="#000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="24"
+        android:weightSum="202"
+        android:background="#0fff"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48"
+            android:gravity="center_vertical"
+            android:text="나이"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/join_age"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="154"
+            android:background="#D9D9D9"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="24"
+        android:weightSum="202"
+        android:background="#0fff"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48"
+            android:gravity="center_vertical"
+            android:text="학과"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/join_major"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="154"
+            android:background="#D9D9D9"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textColor="#000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="24"
+        android:weightSum="202"
+        android:background="#0fff"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48"
+            android:gravity="center_vertical"
+            android:text="학번"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/join_student_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="154"
+            android:background="#D9D9D9"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="24"
+        android:weightSum="202"
+        android:background="#0fff"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48"
+            android:gravity="center_vertical"
+            android:text="취미"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/join_hobby"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="154"
+            android:background="#D9D9D9"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="과팅 프로필에서 보여집니다."
+            android:inputType="textPersonName"
+            android:textColor="#000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="24"
+        android:weightSum="202"
+        android:background="#0fff"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48"
+            android:gravity="center_vertical"
+            android:text="MBTI"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/join_mbti"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="154"
+            android:background="#D9D9D9"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="과팅 프로필에서 보여집니다."
+            android:inputType="textPersonName"
+            android:textColor="#000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="24"
+        android:weightSum="202"
+        android:background="#0fff"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48"
+            android:gravity="center_vertical"
+            android:text="성별"
+            android:textColor="#000"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="154"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/join_is_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="남자"
+                android:textColor="#000"
+                android:textSize="15dp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <CheckBox
+                android:id="@+id/join_is_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="여자"
+                android:textColor="#000"
+                android:textSize="15dp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/join_member_button"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/radius"
+        android:backgroundTint="#91ADF3"
+        android:text="회원가입"
+        android:textColor="#000"
+        android:layout_marginTop="50dp"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "938744528504",
+    "project_id": "ssu-ppy-122b2",
+    "storage_bucket": "ssu-ppy-122b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938744528504:android:2f700a75f97d9acfefb78d",
+        "android_client_info": {
+          "package_name": "com.opensource.ssu_ppy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938744528504-hcmvnfg1prp8ql7jvpjua8l304uuj5an.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.opensource.ssu_ppy",
+            "certificate_hash": "7a66a6da1d4e492c7b26b239664d99e10d2b5eb9"
+          }
+        },
+        {
+          "client_id": "938744528504-q86qsb6pq4cndpo5u16oos3f9jc1ulva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxbBnNK2teQc7AdpeJ5bh-J3Ox93XsCNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938744528504-q86qsb6pq4cndpo5u16oos3f9jc1ulva.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

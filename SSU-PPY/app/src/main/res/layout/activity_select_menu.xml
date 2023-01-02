@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".SelectMenu"
+    android:background="#fff">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="440">
+
+            <include
+                layout="@layout/toolbar"
+                android:id="@+id/toolbar"/>
+            <Button
+                android:id="@+id/switch_open_chat_button"
+                android:background="@drawable/radius"
+                android:backgroundTint="#FFF492"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_weight="110"
+                android:text="오픈채팅"
+                android:textColor="#000"
+                android:textSize="30dp"
+                android:letterSpacing="0.4"
+                android:layout_marginTop="150dp"/>
+
+            <Button
+                android:id="@+id/switch_meeting_button"
+                android:background="@drawable/radius"
+                android:backgroundTint="#FFC5C5"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_weight="110"
+                android:text="과팅"
+                android:textColor="#000"
+                android:textSize="30dp"
+                android:letterSpacing="2.9"
+                android:layout_marginTop="80dp" />
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/navigationView"
+            android:layout_gravity="left"
+            app:headerLayout="@layout/header_layout"
+            app:menu="@menu/drawer_menu">
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>

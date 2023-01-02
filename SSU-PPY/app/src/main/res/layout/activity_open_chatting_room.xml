@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:weightSum="880">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="869"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatting_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarFadeDuration="0"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="400"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <EditText
+            android:id="@+id/opChatContent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="350" />
+        <Button
+            android:id="@+id/opSendMessage"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="50dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="#FFF382"
+            android:text="↑"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReviseProfile"
+    android:weightSum="440"
+    android:background="#fff">
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="24"
+        android:weightSum="202"
+        android:background="#0fff"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48"
+            android:gravity="center_vertical"
+            android:text="이름"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/myName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="154"
+            android:background="#fff"
+            android:ems="10"
+            android:gravity="center"
+            android:textColor="#000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="24"
+        android:weightSum="202"
+        android:background="#0fff"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48"
+            android:gravity="center_vertical"
+            android:text="나이"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/myAge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="154"
+            android:background="#fff"
+            android:ems="10"
+            android:gravity="center"
+            android:textColor="#000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="24"
+        android:weightSum="202"
+        android:background="#0fff"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48"
+            android:gravity="center_vertical"
+            android:text="학번"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/myStudentNum"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="154"
+            android:background="#fff"
+            android:ems="10"
+            android:gravity="center"
+            android:textColor="#000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="24"
+        android:weightSum="202"
+        android:background="#0fff"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48"
+            android:gravity="center_vertical"
+            android:text="성별"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/mySex"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="154"
+            android:background="#fff"
+            android:ems="10"
+            android:gravity="center"
+            android:textColor="#000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="24"
+        android:weightSum="202"
+        android:background="#0fff"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48"
+            android:gravity="center_vertical"
+            android:text="학과"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/reviseMajor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="154"
+            android:background="#D9D9D9"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textColor="#000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="24"
+        android:weightSum="202"
+        android:background="#0fff"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48"
+            android:gravity="center_vertical"
+            android:text="취미"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/reviseHobby"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="154"
+            android:background="#D9D9D9"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="과팅 프로필에서 보여집니다."
+            android:inputType="textPersonName"
+            android:textColor="#000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="24"
+        android:weightSum="202"
+        android:background="#0fff"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48"
+            android:gravity="center_vertical"
+            android:text="MBTI"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/reviseMbti"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="154"
+            android:background="#D9D9D9"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="과팅 프로필에서 보여집니다."
+            android:inputType="textPersonName"
+            android:textColor="#000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reviseProfileButton"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/radius"
+        android:backgroundTint="#91ADF3"
+        android:text="회원정보수정"
+        android:textColor="#000"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>
